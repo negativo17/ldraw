@@ -1,5 +1,5 @@
 Name:           ldraw
-Version:        2020.03
+Version:        2022.05
 Release:        1%{?dist}
 Summary:        LDraw parts library
 License:        CC-BY
@@ -45,6 +45,9 @@ cp -fra models parts p %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}/models
 
 %changelog
+* Sat Oct 08 2022 Simone Caronni <negativo17@gmail.com> - 2022.05-1
+- Update to 2022.05.
+
 * Thu Apr 15 2021 Simone Caronni <negativo17@gmail.com> - 2020.03-1
 - Update to 2020.03 - 29 December 2020.
 
