@@ -1,5 +1,5 @@
 Name:           ldraw
-Version:        2023.01
+Version:        2023.04
 Release:        1%{?dist}
 Summary:        LDraw parts library
 License:        CC-BY
@@ -45,6 +45,9 @@ cp -fra models parts p %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}/models
 
 %changelog
+* Sun Oct 01 2023 Simone Caronni <negativo17@gmail.com> - 2023.04-1
+- Update to 2023.04.
+
 * Thu Mar 09 2023 Simone Caronni <negativo17@gmail.com> - 2023.01-1
 - Update to 2023-01
 
