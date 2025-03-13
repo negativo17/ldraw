@@ -1,7 +1,7 @@
 Name:           ldraw
 # https://library.ldraw.org/updates?latest
-Version:        2024.07
-Release:        2%{?dist}
+Version:        2025.02
+Release:        1%{?dist}
 Summary:        LDraw parts library
 License:        CC-BY
 URL:            http://www.ldraw.org/
@@ -46,6 +46,10 @@ cp -fra models parts p %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}/models
 
 %changelog
+* Thu Mar 13 2025 Simone Caronni <negativo17@gmail.com> - 2025.02-1
+- Update to 2025-02.
+- Trim changelog.
+
 * Thu Sep 26 2024 Simone Caronni <negativo17@gmail.com> - 2024.07-2
 - Update to 2024-07.
 
@@ -54,24 +58,3 @@ cp -fra models parts p %{buildroot}%{_datadir}/%{name}
 
 * Tue Mar 05 2024 Simone Caronni <negativo17@gmail.com> - 2024.01-2
 - Update to 2024-01.
-
-* Sun Nov 26 2023 Simone Caronni <negativo17@gmail.com> - 2023.06-1
-- Update to 2023.06.
-
-* Sun Oct 01 2023 Simone Caronni <negativo17@gmail.com> - 2023.04-1
-- Update to 2023.04.
-
-* Thu Mar 09 2023 Simone Caronni <negativo17@gmail.com> - 2023.01-1
-- Update to 2023-01
-
-* Sat Oct 08 2022 Simone Caronni <negativo17@gmail.com> - 2022.05-1
-- Update to 2022.05.
-
-* Thu Apr 15 2021 Simone Caronni <negativo17@gmail.com> - 2020.03-1
-- Update to 2020.03 - 29 December 2020.
-
-* Sun Nov 22 2020 Simone Caronni <negativo17@gmail.com> - 2020.02-1
-- Update to 2020.02.
-
-* Thu Jan 23 2020 Simone Caronni <negativo17@gmail.com> - 2019.03-1
-- First build.
