@@ -1,10 +1,10 @@
 Name:           ldraw
 # https://library.ldraw.org/updates?latest
-Version:        2025.02
+Version:        2025.06
 Release:        1%{?dist}
 Summary:        LDraw parts library
 License:        CC-BY
-URL:            http://www.ldraw.org/
+URL:            http://library.ldraw.org/
 BuildArch:      noarch
 
 Source0:        %{url}/library/updates/complete.zip#/%{name}-%{version}.zip
@@ -29,23 +29,23 @@ Example models that use the LDraw™ library.
 %autosetup -n %{name}
 rm -f mklist*
 
-%build
-# Nothing to build
-
 %install
 mkdir -p %{buildroot}%{_datadir}/%{name}
-cp -fra models parts p %{buildroot}%{_datadir}/%{name}
+cp -fra models parts p *.ldr %{buildroot}%{_datadir}/%{name}
 
 %files
-%license CAlicense.txt CAreadme.txt
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/parts
-%{_datadir}/%{name}/p
+%license CAlicense4.txt CAlicense.txt CAreadme.txt
+%doc Readme.txt
+%{_datadir}/%{name}
 
 %files models
 %{_datadir}/%{name}/models
 
 %changelog
+* Fri Jun 27 2025 Simone Caronni <negativo17@gmail.com> - 2025.06-1
+- Update to 2025-06.
+- Adjust URL and files section.
+
 * Thu Mar 13 2025 Simone Caronni <negativo17@gmail.com> - 2025.02-1
 - Update to 2025-02.
 - Trim changelog.
