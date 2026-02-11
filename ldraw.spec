@@ -1,6 +1,6 @@
 Name:           ldraw
 # https://library.ldraw.org/updates?latest
-Version:        2025.08
+Version:        2026.01
 Release:        1%{?dist}
 Summary:        LDraw parts library
 License:        CC-BY
@@ -42,6 +42,9 @@ cp -fra models parts p *.ldr %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}/models
 
 %changelog
+* Wed Feb 11 2026 Simone Caronni <negativo17@gmail.com> - 2026.01-1
+- Update to 2026.01.
+
 * Tue Sep 02 2025 Simone Caronni <negativo17@gmail.com> - 2025.08-1
 - Update to 2025.08.
 
